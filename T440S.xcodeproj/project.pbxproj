@@ -6,10 +6,21 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXFileReference section */
+		DF7B21C722B58E4A00BFE2B5 /* hotpatch */ = {isa = PBXFileReference; lastKnownFileType = folder; path = hotpatch; sourceTree = "<group>"; };
+		DF7B21C822B58E4B00BFE2B5 /* SystemLogo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SystemLogo; sourceTree = "<group>"; };
+		DF7B21C922B58E4B00BFE2B5 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		DF7B21CA22B58E4B00BFE2B5 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		DF7B21C022B58E0B00BFE2B5 = {
 			isa = PBXGroup;
 			children = (
+				DF7B21CA22B58E4B00BFE2B5 /* Audio */,
+				DF7B21C922B58E4B00BFE2B5 /* config.plist */,
+				DF7B21C722B58E4A00BFE2B5 /* hotpatch */,
+				DF7B21C822B58E4B00BFE2B5 /* SystemLogo */,
 			);
 			sourceTree = "<group>";
 		};
