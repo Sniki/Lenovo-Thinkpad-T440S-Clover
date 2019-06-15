@@ -302,22 +302,38 @@ DefinitionBlock ("", "SSDT", 2, "T440S", "_BAT", 0)
         }
         Field (ECR1, ByteAcc, NoLock, Preserve)
         {
-            Offset (0xA0),             BRC0, 8,BRC1, 8,            BFC0, 8,BFC1, 8,            //SBAE,   16,            //SBRS,   16,
-            Offset (0xA8),            BAC0, 8,BAC1, 8,            BVO0, 8,BVO1, 8,
+            Offset (0xA0), 
+            BRC0, 8,BRC1, 8,
+            BFC0, 8,BFC1, 8,
+            //SBAE,   16,
+            //SBRS,   16,
+            Offset (0xA8),
+            BAC0, 8,BAC1, 8,
+            BVO0, 8,BVO1, 8,
         }
         Field (ECR1, ByteAcc, NoLock, Preserve)
         {
-            Offset (0xA0),             BBM0, 8,BBM1, 8,             //SBMD,   16,
-            Offset (0xA4),            BCC0, 8,BCC1, 8,
+            Offset (0xA0), 
+            BBM0, 8,BBM1, 8, 
+            //SBMD,   16,
+            Offset (0xA4),
+            BCC0, 8,BCC1, 8,
         }
         Field (ECR1, ByteAcc, NoLock, Preserve)
         {
-            Offset (0xA0),             BDC0, 8,BDC1, 8,             BDV0, 8,BDV1, 8,             //SBOM,   16,             //SBSI,   16,             //SBDT,   16,
-            Offset (0xAA),            BSN0, 8,BSN1, 8,
+            Offset (0xA0), 
+            BDC0, 8,BDC1, 8, 
+            BDV0, 8,BDV1, 8, 
+            //SBOM,   16, 
+            //SBSI,   16, 
+            //SBDT,   16,
+            Offset (0xAA),
+            BSN0, 8,BSN1, 8,
         }
         Field (ECR1, ByteAcc, NoLock, Preserve)
         {
-            Offset (0xA0),             BCH0, 8,BCH1, 8,BCH2, 8,BCH3, 8,
+            Offset (0xA0), 
+            BCH0, 8,BCH1, 8,BCH2, 8,BCH3, 8,
         }
         
                     Method (GBIF, 3, NotSerialized)
