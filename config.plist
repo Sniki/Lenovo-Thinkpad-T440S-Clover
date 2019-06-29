@@ -412,13 +412,15 @@
 			</dict>
 			<key>PciRoot(0)/Pci(0x03,0)</key>
 			<dict>
+				<key>#Comment</key>
+				<string>Intel HDMI Audio Codec</string>
 				<key>layout-id</key>
 				<integer>28</integer>
 			</dict>
 			<key>PciRoot(0)/Pci(0x1b,0)</key>
 			<dict>
-				<key>#PinConfigurations</key>
-				<data></data>
+				<key>#Comment</key>
+				<string>Realtek ALC3232 Audio Codec</string>
 				<key>layout-id</key>
 				<integer>28</integer>
 			</dict>

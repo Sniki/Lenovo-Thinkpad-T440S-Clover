@@ -1,5 +1,5 @@
 // Lenovo ThinkPad T440S Keyboard Map.
-// Lenovo ThinkPad T440S TrackPad Configuration
+// Lenovo ThinkPad T440S ClickPad Configuration.
 
 #ifndef NO_DEFINITIONBLOCK
 DefinitionBlock("", "SSDT", 2, "T440S", "_KBD", 0)
@@ -20,7 +20,7 @@ DefinitionBlock("", "SSDT", 2, "T440S", "_KBD", 0)
             Notify (KBD, 0x0405)
         }
 
-        Method (_Q6A, 0, NotSerialized)  //F4 Microphone Mute - Siri (SysPrefs>Siri>Keyboard Shortcut)
+        Method (_Q6A, 0, NotSerialized)  // (F4) Microphone Mute - Siri
         {
             Notify (KBD, 0x033E)
         }
@@ -30,27 +30,27 @@ DefinitionBlock("", "SSDT", 2, "T440S", "_KBD", 0)
             Notify (KBD, 0x046E)
         }
 
-        Method (_Q64, 0, NotSerialized)  //F8 Wireless ON/OFF - Notification Center (SysPrefs>Keyboard>Shortcuts)
+        Method (_Q64, 0, NotSerialized)  // (F8) Wireless ON/OFF - Notification Center
         {
             Notify (KBD, 0x0342)
         }
 
-        Method (_Q66, 0, NotSerialized)  // F16 Settings - System Preferences (SysPrefs>Keyboard>Shortcuts)
+        Method (_Q66, 0, NotSerialized)  // (F16) Settings - System Preferences
         {
             Notify (KBD, 0x0367)
         }
 
-        Method (_Q67, 0, NotSerialized)  //F17 Windows Search (Cortana) - Spotlight Search (SysPrefs>Keyboard>Shortcuts)
+        Method (_Q67, 0, NotSerialized)  // (F17) Windows Search - Spotlight Search
         {
             Notify (KBD, 0x0368)
         }
 
-        Method (_Q68, 0, NotSerialized)  //F18 ALT+TAB Menu - Mission Control (SysPrefs>Keyboard>Shortcuts)
+        Method (_Q68, 0, NotSerialized)  // (F18) App Switcher - Mission Control
         {
             Notify (KBD, 0x0369)
         }
 
-        Method (_Q69, 0, NotSerialized)  //F19 Start Menu - Launchpad (SysPrefs>Keyboard>Shortcuts)
+        Method (_Q69, 0, NotSerialized)  // (F19) Start Menu - Launchpad
         {
             Notify (KBD, 0x036A)
         }

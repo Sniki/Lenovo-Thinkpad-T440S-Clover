@@ -1,7 +1,6 @@
 // Custom Configuration for Realtek ALC3232 Codec with ComboJack on Lenovo ThinkPad L440.
 // Works also on Lenovo Thinkpad: L450/T440/T440S/T440P/T540P/T450/X240... etc.
 // Must use AlcPlugFix to have all working Inputs & Outputs ; Wake & Sleep.
-
 // This data provided by @Sniki.
 
 #ifndef NO_DEFINITIONBLOCK
