@@ -12,6 +12,10 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
+				<key>AddMCHC</key>
+				<true/>
+				<key>AddPNLF</key>
+				<true/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
@@ -104,16 +108,6 @@
 					<data>VklEXwhfQURSDAAAAgA=</data>
 					<key>Replace</key>
 					<data>SUdQVQhfQURSDAAAAgA=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change Method(_PTS,1,N) to ZPTS</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1BUUwE=</data>
-					<key>Replace</key>
-					<data>WlBUUwE=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -434,6 +428,10 @@
 			<key>Inject</key>
 			<true/>
 		</dict>
+		<key>SetIntelBacklight</key>
+		<true/>
+		<key>SetIntelMaxBacklight</key>
+		<true/>
 		<key>UseIntelHDMI</key>
 		<false/>
 	</dict>

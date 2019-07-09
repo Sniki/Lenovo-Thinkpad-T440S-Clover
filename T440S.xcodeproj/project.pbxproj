@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		DF0C394B22C9711E0061FF0C /* SSDT-T440S.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-T440S.aml"; sourceTree = "<group>"; };
+		DF6892A722D548910040C336 /* SSDT-T440S.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-T440S.aml"; sourceTree = "<group>"; };
 		DF7B21C722B58E4A00BFE2B5 /* hotpatch */ = {isa = PBXFileReference; lastKnownFileType = folder; path = hotpatch; sourceTree = "<group>"; };
 		DF7B21C822B58E4B00BFE2B5 /* SystemLogo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SystemLogo; sourceTree = "<group>"; };
 		DF7B21C922B58E4B00BFE2B5 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
@@ -20,8 +20,8 @@
 		DF7B21C022B58E0B00BFE2B5 = {
 			isa = PBXGroup;
 			children = (
-				DF0C394B22C9711E0061FF0C /* SSDT-T440S.aml */,
 				DF7B21C922B58E4B00BFE2B5 /* config.plist */,
+				DF6892A722D548910040C336 /* SSDT-T440S.aml */,
 				DF94E18322C8219200A458C7 /* Themes */,
 				DF94E18222C8218900A458C7 /* kexts */,
 				DF7B21CA22B58E4B00BFE2B5 /* Audio */,

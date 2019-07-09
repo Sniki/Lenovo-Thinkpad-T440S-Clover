@@ -96,17 +96,6 @@ DefinitionBlock ("", "SSDT", 2, "T440S", "_USB", 0)
     {
         // do nothing
     }
-    External(ZPTS, MethodObj)
-    External(_SB.PCI0.XHC.PMEE, FieldUnitObj)
-    Method(_PTS, 1)
-    {
-        ZPTS(Arg0)
-        If (5 == Arg0)
-        {
-            // fix "auto start after shutdown if a USB Device is Plugged In"
-            \_SB.PCI0.XHC.PMEE = 0
-        }
-    }
 #ifndef NO_DEFINITIONBLOCK
 }
 #endif

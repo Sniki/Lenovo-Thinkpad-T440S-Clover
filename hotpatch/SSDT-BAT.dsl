@@ -1,8 +1,7 @@
 // Battery Status Hotpatch for Lenovo ThinkPad T440S
-// Also used as a fix for Dual Batteries
-// Adds SMCD Device for Fan RPM & CPUHeatsink
+// Adds support for Dual Batteries on macOS
+// Adds SMCD Device for Fan RPM reporting on HWMonitor and similar applications
 // Fixes LED Blink when waking from Sleep
-// Fixes Auto Restart after Shutdown when a USB is PluggedIn,
 
 #ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "T440S", "_BAT", 0)

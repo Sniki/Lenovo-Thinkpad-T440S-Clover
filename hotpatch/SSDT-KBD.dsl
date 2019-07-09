@@ -10,12 +10,12 @@ DefinitionBlock("", "SSDT", 2, "T440S", "_KBD", 0)
 
     Scope (_SB.PCI0.LPC.EC)
     {
-        Method (_Q14, 0, NotSerialized)  // Brightness Up
+        Method (_Q14, 0, NotSerialized)  // (F15) Brightness Up
         {
             Notify (KBD, 0x0406)
         }
 
-        Method (_Q15, 0, NotSerialized)  // Brightness Down
+        Method (_Q15, 0, NotSerialized)  // (F14) Brightness Down
         {
             Notify (KBD, 0x0405)
         }
