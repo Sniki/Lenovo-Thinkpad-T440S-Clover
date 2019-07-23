@@ -83,7 +83,7 @@ DefinitionBlock("", "SSDT", 2, "T440S", "_KBD", 0)
                 //"ForcePassThrough", ">y",
                 //"SkipPassThrough", ">y",
                 "PalmNoAction When Typing", ">y",
-                "ScrollResolution", 400,
+                "ScrollResolution", 800,
                 "SmoothInput", ">y",
                 "UnsmootInput", ">y",
                 "Thinkpad", ">y",
