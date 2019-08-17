@@ -61,16 +61,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change XHCI to XHC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>WEhDSQ==</data>
-					<key>Replace</key>
-					<data>WEhDXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>Change SAT1 to SATA</string>
 					<key>Disabled</key>
 					<false/>
@@ -131,17 +121,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Instant Wake Fix 1(_PRW 0x6d, 0x03) to (0x6d, 0)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>EhUDCm0KA14=</data>
-					<key>Replace</key>
-					<data>EhUDCm0KAF4=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Instant Wake Fix 2(_PRW 0x6d, 0x04) to (0x6d, 0)</string>
+					<string>Instant Wake Fix (_PRW 0x6d, 0x04) to (0x6d, 0)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -168,16 +148,6 @@
 					<data>R0JTVAQ=</data>
 					<key>Replace</key>
 					<data>WEJTVAQ=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change Method(L0D,0,N) to XL0D</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X0wwRA==</data>
-					<key>Replace</key>
-					<data>WEwwRA==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -251,7 +221,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change Method(_Q6A,0,N) to XQ28</string>
+					<string>Change Method(_Q6A,0,N) to XQ6A</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -261,7 +231,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change Method(_Q16,0,N) to XQ19</string>
+					<string>Change Method(_Q16,0,N) to XQ16</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -271,7 +241,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change Method(_Q64,0,N) to XQ2A</string>
+					<string>Change Method(_Q64,0,N) to XQ64</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -387,20 +357,12 @@
 				<integer>1</integer>
 				<key>framebuffer-cursormem</key>
 				<data>AACQAA==</data>
-				<key>## @1 HDMI</key>
-				<string></string>
 				<key>framebuffer-con1-enable</key>
 				<integer>1</integer>
 				<key>framebuffer-con1-alldata</key>
 				<data>AQUSAAAEAACHAAAA</data>
-				<key>## @2 VGA</key>
-				<string></string>
 				<key>framebuffer-con2-enable</key>
 				<integer>1</integer>
-				<key>framebuffer-con2-flags</key>
-				<data>BgAAAA==</data>
-				<key>framebuffer-con2-pipe</key>
-				<data>EgAAAA==</data>
 				<key>framebuffer-con2-type</key>
 				<data>AAEAAA==</data>
 			</dict>
@@ -482,9 +444,7 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>Embedded</string>
-		<key>EmbeddedThemeType</key>
-		<string>Dark</string>
+		<string>ThinkPad</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>

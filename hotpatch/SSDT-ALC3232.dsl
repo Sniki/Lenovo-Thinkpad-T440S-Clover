@@ -6,7 +6,7 @@
 #ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 1, "Sniki", "_ALC3232", 0)
 {
-#endif
+    #endif
     External(_SB.PCI0.HDEF, DeviceObj)
     Name(_SB.PCI0.HDEF.RMCF, Package()
     {
@@ -38,7 +38,6 @@ DefinitionBlock ("", "SSDT", 1, "Sniki", "_ALC3232", 0)
             "Sleep Nodes", ">n",
         },
     })
-#ifndef NO_DEFINITIONBLOCK
+    #ifndef NO_DEFINITIONBLOCK
 }
 #endif
-//EOF

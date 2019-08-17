@@ -1,18 +1,23 @@
-// Lenovo ThinkPad T440S USB Port Injector.
-// Supports TouchScreen.
-// FingerPrint Reader Disabled (Not supported on macOS).
-// Fixed AutoStart after Shutdown if a USB device is plugged in.
+// Lenovo ThinkPad T440S USB Port Injector
+// Override incorrect MacBookAir6,2 and MacBookPro11,1 USB Power Properties with Macbook Pro14,3
+// FingerPrint Reader Disabled (Not supported on macOS)
 
 #ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "T440S", "_USB", 0)
 {
-#endif
+    #endif
     Device(UIAC)
     {
         Name(_HID, "UIA00000")
-
         Name(RMCF, Package()
         {
+            // USB Power Properties for Sierra and above (using USBInjectAll injection)
+            "AppleBusPowerController", Package()
+            {
+                // these values happen to be MacBookPro14,3 values...
+                "kUSBSleepPortCurrentLimit", 3000,
+                "kUSBWakePortCurrentLimit", 3000,
+            },
             "HUB1", Package()
             {
                 "port-count", Buffer() { 8, 0, 0, 0 },
@@ -36,7 +41,7 @@ DefinitionBlock ("", "SSDT", 2, "T440S", "_USB", 0)
                         "port", Buffer() { 1, 0, 0, 0 },
                     },
                 },
-            },            
+            },
             "8086_9c31", Package()
             {
                 "port-count", Buffer() { 13, 0, 0, 0 },
@@ -72,17 +77,17 @@ DefinitionBlock ("", "SSDT", 2, "T440S", "_USB", 0)
                         "UsbConnector", 255,
                         "port", Buffer() { 8, 0, 0, 0 },
                     },
-                    "SSP1", Package() // USB3 Port
+                    "SS01", Package() // USB3 Port
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 10, 0, 0, 0 },
                     },
-                    "SSP2", Package() // USB3 Port
+                    "SS02", Package() // USB3 Port
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 11, 0, 0, 0 },
                     },
-                    "SSP3", Package() // USB3 Port
+                    "SS03", Package() // USB3 Port
                     {
                         "UsbConnector", 3,
                         "port", Buffer() { 12, 0, 0, 0 },
@@ -91,12 +96,6 @@ DefinitionBlock ("", "SSDT", 2, "T440S", "_USB", 0)
             },
         })
     }
-    
-    Method(_SB.PCI0.XHC.ESEL)
-    {
-        // do nothing
-    }
-#ifndef NO_DEFINITIONBLOCK
+    #ifndef NO_DEFINITIONBLOCK
 }
 #endif
-//EOF
