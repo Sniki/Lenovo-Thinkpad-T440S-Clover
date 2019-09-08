@@ -1,5 +1,5 @@
 // Fix LED and Power Button blink after wake from sleep for Lenovo Thinkpads:
-// X240, T440, T440P, T440S, T540P, L440, L450, T450 etc
+// X240, T440, T440P, T440S, T540P, L450, T450 etc
 // Credits: Rehabman, vit9696, Sniki
 
 #ifndef NO_DEFINITIONBLOCK
