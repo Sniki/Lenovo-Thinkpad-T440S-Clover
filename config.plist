@@ -267,7 +267,7 @@
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>dart=0 -cdfon -igfxnohdmi</string>
+		<string>-cdfon -igfxnohdmi</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -289,6 +289,10 @@
 				<data>EgQAAA==</data>
 				<key>framebuffer-cursormem</key>
 				<data>AACQAA==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
 			</dict>
 			<key>PciRoot(0)/Pci(0x03,0)</key>
 			<dict>

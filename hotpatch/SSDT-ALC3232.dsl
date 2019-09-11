@@ -33,7 +33,7 @@ DefinitionBlock ("", "SSDT", 1, "Sniki", "_ALC3232", 0)
                     "On Wake", ">y",
                 },
             },
-            "Perform Reset", ">y",
+            "Perform Reset", ">n",
             "Send Delay", 10,
             "Sleep Nodes", ">n",
         },
