@@ -300,7 +300,7 @@
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
-				<string>&lt;02041200 10000000 87000000&gt;</string>
+				<data>AgQSABAAAACHAAAA</data>
 			</dict>
 			<key>PciRoot(0)/Pci(0x03,0)</key>
 			<dict>
