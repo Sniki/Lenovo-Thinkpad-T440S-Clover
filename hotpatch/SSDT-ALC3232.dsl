@@ -1,13 +1,11 @@
+// LineIn (External Microphone) fix for Lenovo ThinkPad(s) with Realtek ALC3232 Codec with ComboJack
+// Must use AlcPlugFix to have all working Inputs & Outputs before and after wake from sleep.
 // Custom Configuration for Realtek ALC3232 Codec with ComboJack on Lenovo ThinkPads like:
-// L440, L450, T440, T440S, T440P, T540P, T450, X240
-// Must use AlcPlugFix to have all working Inputs & Outputs with Wake and Sleep support.
 // Credits: Sniki
 
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 1, "Sniki", "_ALC3232", 0)
 {
-    #endif
-    External(_SB.PCI0.HDEF, DeviceObj)
+    External (_SB.PCI0.HDEF, DeviceObj)
     Name(_SB.PCI0.HDEF.RMCF, Package()
     {
         "CodecCommander", Package()
@@ -38,6 +36,4 @@ DefinitionBlock ("", "SSDT", 1, "Sniki", "_ALC3232", 0)
             "Sleep Nodes", ">n",
         },
     })
-    #ifndef NO_DEFINITIONBLOCK
 }
-#endif

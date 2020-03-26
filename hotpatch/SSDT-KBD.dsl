@@ -1,54 +1,132 @@
 // Lenovo ThinkPad T440S Keyboard Map.
-// Lenovo ThinkPad T440S ClickPad Configuration.
+// Lenovo ThinkPad T440S TouchPad Configuration.
 
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock("", "SSDT", 2, "T440S", "_KBD", 0)
 {
-#endif
     External (_SB.PCI0.LPC.EC, DeviceObj)
     External (_SB.PCI0.LPC.KBD, DeviceObj)
+    External (_SB.PCI0.LPC.EC.XQ14, MethodObj)
+    External (_SB.PCI0.LPC.EC.XQ15, MethodObj)
+    External (_SB.PCI0.LPC.EC.XQ6A, MethodObj)
+    External (_SB.PCI0.LPC.EC.XQ16, MethodObj)
+    External (_SB.PCI0.LPC.EC.XQ64, MethodObj)
+    External (_SB.PCI0.LPC.EC.XQ66, MethodObj)
+    External (_SB.PCI0.LPC.EC.XQ67, MethodObj)
+    External (_SB.PCI0.LPC.EC.XQ68, MethodObj)
+    External (_SB.PCI0.LPC.EC.XQ69, MethodObj)
     
     Scope (_SB.PCI0.LPC.EC)
     {
-        Method (_Q14, 0, NotSerialized)  // (F15) Brightness Up
+        Method (_Q14, 0, NotSerialized)
         {
-            Notify (KBD, 0x0406)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD, 0x0406)
+            }
+            Else
+            {
+                \_SB.PCI0.LPC.EC.XQ14 ()
+            }
         }
-        Method (_Q15, 0, NotSerialized)  // (F14) Brightness Down
+
+        Method (_Q15, 0, NotSerialized)
         {
-            Notify (KBD, 0x0405)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD, 0x0405)
+            }
+            Else
+            {
+                \_SB.PCI0.LPC.EC.XQ15 ()
+            }
         }
-        Method (_Q6A, 0, NotSerialized)  // (F4) Microphone Mute - Siri
+
+        Method (_Q6A, 0, NotSerialized)
         {
-            Notify (KBD, 0x033E)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD, 0x033E)
+            }
+            Else
+            {
+                \_SB.PCI0.LPC.EC.XQ6A ()
+            }
         }
-        Method (_Q16, 0, NotSerialized)  // Projector / Mirror mode
+
+        Method (_Q16, 0, NotSerialized)
         {
-            Notify (KBD, 0x046E)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD, 0x046E)
+            }
+            Else
+            {
+                \_SB.PCI0.LPC.EC.XQ16 ()
+            }
         }
-        Method (_Q64, 0, NotSerialized)  // (F8) Wireless ON/OFF - Notification Center
+
+        Method (_Q64, 0, NotSerialized)
         {
-            Notify (KBD, 0x0342)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD, 0x0342)
+            }
+            Else
+            {
+                \_SB.PCI0.LPC.EC.XQ64 ()
+            }
         }
-        Method (_Q66, 0, NotSerialized)  // (F16) Settings - System Preferences
+
+        Method (_Q66, 0, NotSerialized)
         {
-            Notify (KBD, 0x0367)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD, 0x0367)
+            }
+            Else
+            {
+                \_SB.PCI0.LPC.EC.XQ66 ()
+            }
         }
-        Method (_Q67, 0, NotSerialized)  // (F17) Windows Search - Spotlight Search
+
+        Method (_Q67, 0, NotSerialized)
         {
-            Notify (KBD, 0x0368)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD, 0x0368)
+            }
+            Else
+            {
+                \_SB.PCI0.LPC.EC.XQ67 ()
+            }
         }
-        Method (_Q68, 0, NotSerialized)  // (F18) App Switcher - Mission Control
+
+        Method (_Q68, 0, NotSerialized)
         {
-            Notify (KBD, 0x0369)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD, 0x0369)
+            }
+            Else
+            {
+                \_SB.PCI0.LPC.EC.XQ68 ()
+            }
         }
-        Method (_Q69, 0, NotSerialized)  // (F19) Start Menu - Launchpad
+
+        Method (_Q69, 0, NotSerialized)
         {
-            Notify (KBD, 0x036A)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD, 0x036A)
+            }
+            Else
+            {
+                \_SB.PCI0.LPC.EC.XQ69 ()
+            }
         }
     }
     
-    Scope(_SB.PCI0.LPC.KBD)
+    Scope (_SB.PCI0.LPC.KBD)
     {
         // Select specific configuration in VoodooPS2Trackpad.kext
         Method(_DSM, 4)
@@ -99,6 +177,4 @@ DefinitionBlock("", "SSDT", 2, "T440S", "_KBD", 0)
             },
         })
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif
