@@ -62,9 +62,9 @@ DefinitionBlock ("", "SSDT", 2, "T440S", "_USB", 0)
                     },
                     "HS04", Package() // WWAN 4G/LTE
                     {
-                        "UsbConnector" 255,
+                        "UsbConnector", 255,
                         "port", Buffer() { 4, 0, 0, 0 },
-                    }
+                    },
                     //"HS06", Package() // FingerPrint Reader
                     //{
                         //"UsbConnector", 255,
